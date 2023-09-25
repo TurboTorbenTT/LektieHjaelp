@@ -1,0 +1,17 @@
+<!--EXTERNAL_PROPERTIES: AppData-->
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+		<!--https://stackoverflow.com/questions/23120497/use-appdata-environment-variable-in-csproj-->
+		<!--https://learn.microsoft.com/en-us/visualstudio/msbuild/common-msbuild-project-properties?view=vs-2022#list-of-common-properties-and-parameters-->
+		<OutDir>$(AppData)\ReflectionExample\ImportFiles</OutDir>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ReflectionExample.Abstraction\ReflectionExample.Abstraction.csproj" />
+    </ItemGroup>
+
+</Project>
